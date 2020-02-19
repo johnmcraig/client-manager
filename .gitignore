@@ -1,0 +1,9 @@
+wwwroot
+obj
+bin
+*.user
+.vs
+.vscode
+node_modules
+package-lock.json
+appsettings.json

@@ -1,0 +1,15 @@
+/* Use this at the JSON Generator site to create a list of clients */
+[
+  '{{repeat(25, 50)}}',
+  {
+    firstName: '{{firstName()}}',
+    lastName: '{{surname()}}',
+    phoneNumber: '+1 {{phone()}}',
+    email: '{{email()}}',
+    position: '{{company().toUpperCase()}}',
+    salary: '{{floating(15000, 99000, 2)}}',
+    hourlyRate: '{{floating(10, 100, 2)}}',
+    startDate: '{{date(new Date(2000, 0, 1), new Date(), "YYYY-MM-dd")}}',
+    endDate: '{{date(new Date(2002, 0, 1), new Date(), "YYYY-MM-dd")}}'
+  }
+]
