@@ -61,18 +61,6 @@ export default {
 </script>
 
 <style scoped>
-/* .container {
-  width: 100%;
-  padding: 0.5rem;
-  margin: 2rem;
-} */
-
-.container-fluid {
-  width: 100%;
-  padding: 0.5rem;
-  margin: 2rem;
-}
-
 .card {
   margin: 2rem;
 }
