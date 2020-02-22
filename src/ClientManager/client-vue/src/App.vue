@@ -1,16 +1,8 @@
 <template>
-  <b-container id="app">
-    <b-row>
-      <b-col>
-        <navbar/>
-      </b-col>
-    </b-row>
-    <b-row>
-      <b-col>
+    <div id="app">
+        <navbar />
         <router-view />
-      </b-col>
-    </b-row>
-  </b-container>
+    </div>
 </template>
 
 <script>
