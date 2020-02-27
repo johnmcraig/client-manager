@@ -13,6 +13,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using Microsoft.AspNetCore.Mvc.NewtonsoftJson;
 
 namespace ClientManager
 {
@@ -27,7 +28,7 @@ namespace ClientManager
 
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddControllers();
+            services.AddControllers().AddNewtonsoftJson();
 
             services.AddDbContext<DataDbContext>();
 
@@ -51,11 +52,11 @@ namespace ClientManager
                 app.UseDeveloperExceptionPage();
             }
 
-            //app.UseHttpsRedirection();
+            app.UseHttpsRedirection();
 
             app.UseRouting();
 
-            // app.UseAuthorization();
+            app.UseAuthorization();
 
             app.UseCors("corspolicy");
 
