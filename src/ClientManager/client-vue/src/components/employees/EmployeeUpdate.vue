@@ -119,7 +119,7 @@ export default {
   data() {
     return {
       formData: {
-        fisrtName: "",
+        firstName: "",
         lastName: "",
         email: "",
         phoneNumber: "",
@@ -131,7 +131,7 @@ export default {
       },
       alertModalTitle: "",
       alertModalContent: "",
-      isSuccessfull: false
+      isSuccessful: false
     };
   },
   created() {
@@ -153,20 +153,20 @@ export default {
     updateEmployee() {
       EmployeeService.update(this.$router.currentRoute.params.id, this.formData)
         .then(() => {
-          this.isSuccessfull = true;
+          this.isSuccessful = true;
           this.alertModalTitle = "Success!";
           this.alertModalContent = "Successfully Updated Employee";
           this.$refs.alertModal.show();
         })
         .catch(error => {
-          this.isSuccessfull = false;
+          this.isSuccessful = false;
           this.alertModalTitle = "Error";
           this.alertModalContent = error.response.data;
           this.$refs.alertModal.show();
         });
     },
     onAlertModalOkClick() {
-      if (this.isSuccessfull) {
+      if (this.isSuccessful) {
         this.$router.push({ name: "EmployeeTable" });
       }
     }
