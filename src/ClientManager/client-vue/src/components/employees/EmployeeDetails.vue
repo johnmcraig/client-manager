@@ -49,8 +49,8 @@ export default {
     };
   },
   created() {
-    EmployeeService.getSingle(this.$router.currentRoute.params.id).then(
-      response => {
+    EmployeeService.getSingle(this.$router.currentRoute.params.id)
+    .then(response => {
         this.employee = response.data;
       }
     );
