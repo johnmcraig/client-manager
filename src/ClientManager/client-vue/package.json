@@ -9,23 +9,23 @@
     "watch": "vue-cli-service build --mode Development --watch"
   },
   "dependencies": {
-    "axios": "^0.19.2",
-    "bootstrap": "^4.4.1",
-    "bootstrap-vue": "^2.4.2",
-    "core-js": "^3.6.4",
-    "jquery": "^3.4.1",
+    "axios": "^0.21.0",
+    "bootstrap": "^4.5.3",
+    "bootstrap-vue": "^2.20.1",
+    "core-js": "^3.8.1",
+    "jquery": "^3.5.1",
     "popper.js": "^1.16.1",
-    "vue": "^2.6.11",
-    "vue-router": "^3.1.5"
+    "vue": "^2.6.12",
+    "vue-router": "^3.4.9"
   },
   "devDependencies": {
-    "@vue/cli-plugin-babel": "^4.2.2",
-    "@vue/cli-plugin-eslint": "^4.2.2",
-    "@vue/cli-service": "^4.2.2",
-    "babel-eslint": "^10.0.3",
-    "eslint": "^6.8.0",
-    "eslint-plugin-vue": "^6.2.0",
-    "vue-template-compiler": "^2.6.11",
+    "@vue/cli-plugin-babel": "^4.5.9",
+    "@vue/cli-plugin-eslint": "^4.5.9",
+    "@vue/cli-service": "^4.5.9",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.15.0",
+    "eslint-plugin-vue": "^7.2.0",
+    "vue-template-compiler": "^2.6.12",
     "vue-cli-plugin-source-dir": "^0.1.0"
   },
   "eslintConfig": {
